@@ -45,3 +45,6 @@ So, if you would call in R `pdf( "hello.pdf", paper="a4", width=5 )`, then in Sc
 
 Similarly, if you want `plot( c( 1,2,2.5 ), c( 4,2,3 ), col="#FF0000" )`, then you would use: 
 `plot( Array( 1,2,2.5 ), Array( 4,2,3 ), 'col->new Color( 255, 0, 0 ))`.
+
+
+_NOTE:_  This code is really just here because I use it and wanted some source control that someone else would manage.  I'm happy for you to use it of course, but I don't stand by it or think it's good.  The lack of documentation, etc., is intentional!  (Well, really, it's more that this code is often throw away for experiments than anything else).
