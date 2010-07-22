@@ -5,6 +5,9 @@ import org.rosuda.REngine.JRI._
 import org.rosuda.REngine._
 import java.awt.Color
 
+/**
+ * A thin wrapper around the Java to R bridge
+ */
 class R( engine : REngine )  extends java.io.Closeable {
 	def parseAndEval( expr : String ) = try {
 		println( expr )

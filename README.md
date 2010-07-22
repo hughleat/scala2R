@@ -13,16 +13,19 @@ experiments.  If you need more, please ask me.
 ## Usage
 Typical usage is:
 
+`
 val r = com.hjl.scala2R.R()
 import r._
 pdf( new File( "blah.pdf" ))
 plot( Array( 1, 2, 3, 3, 4 ))
+`
 
 ## Function arguments
 Functions are called with variable arguments.  Each argument is either a value or a pair where the first element is a
 symbol or string and the second is a value.  The pair format allow for named arguments to be passed to R. 
 
 Values are one of 
+
 * None - Becomes `null` in R
 * Boolean
 * Float
