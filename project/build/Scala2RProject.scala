@@ -18,7 +18,6 @@ class Scala2RProject( info : ProjectInfo ) extends DefaultProject( info ) {
     }
     log.info( "JRI jars will be searched for in " + rJava )
     
-    //val scalaToolsSnapshot = ScalaToolsSnapshots
     val scalatest = "org.scalatest"  % "scalatest"  % "1.2"
     val scalacheck = "org.scala-tools.testing" % "scalacheck_2.8.0" % "1.7"
 	override def unmanagedClasspath = super.unmanagedClasspath +++ Path.fromFile( rJava ) ** "*.jar"
